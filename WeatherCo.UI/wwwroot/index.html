@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WeatherCo — Forecast UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            margin: 2rem;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        input, button {
+            padding: 8px 10px;
+            font-size: 14px;
+        }
+
+            input[type="number"] {
+                width: 80px;
+            }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+            gap: 12px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .muted {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .err {
+            color: #b00020;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>WeatherCo Forecast</h1>
+
+    <div class="row">
+        <label for="date">Start date:</label>
+        <input id="date" type="date" />
+        <label for="days">Days (1–14):</label>
+        <input id="days" type="number" min="1" max="14" value="5" />
+        <button id="loadRange">Load range</button>
+        <button id="loadDefault"> 5 days starting from today (default)</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <div id="status" class="muted"></div>
+    <div id="error" class="err"></div>
+    <div id="list" class="grid"></div>
+
+    <script>
+        // Choose your poison:
+        // - Call Azure Functions 
+        const BASE = "http://localhost:7071/api";
+        // - Or call the Producer directly:
+        // const BASE = "http://localhost:5192";
+
+        const PATH_DEFAULT = "/forecast";       // next 5 days
+        const PATH_RANGE = "/forecast/range"; // range endpoint you added
+
+        const el = id => document.getElementById(id);
+        const dateEl = el('date');
+        const daysEl = el('days');
+        const statusEl = el('status');
+        const errEl = el('error');
+        const listEl = el('list');
+
+        function clearUI() { errEl.textContent = ''; statusEl.textContent = ''; listEl.innerHTML = ''; }
+
+        async function fetchJson(url) {
+            const res = await fetch(url);
+            const text = await res.text();
+            let data; try { data = JSON.parse(text); } catch { throw new Error('Bad JSON from server: ' + text); }
+            if (!res.ok) throw new Error((data && (data.error || data.message)) || res.status + ' ' + res.statusText);
+            return data;
+        }
+
+        function render(items) {
+            if (!items || items.length === 0) { listEl.innerHTML = '<div class="muted">No data.</div>'; return; }
+            listEl.innerHTML = items.map(x => {
+                const dateVal = x.date ?? x.Date;
+                const summary = x.summary ?? x.Summary ?? '';
+                const c = x.temperatureC ?? x.TemperatureC ?? '';
+                const f = x.temperatureF ?? x.TemperatureF ?? '';
+                return `<div class="card">
+            <div><strong>${dateVal}</strong></div>
+            <div>${summary}</div>
+            <div>${c} °C / ${f} °F</div>
+          </div>`;
+            }).join('');
+        }
+
+        async function loadRange() {
+            clearUI();
+            let days = parseInt(daysEl.value, 10);
+            if (Number.isNaN(days)) days = 5;
+            if (days < 1 || days > 14) { errEl.textContent = 'days must be between 1 and 14'; return; }
+
+            const qp = new URLSearchParams();
+            // If start date is empty, server defaults to today 
+            if (dateEl.value) qp.set('startDate', dateEl.value); // input type=date -> yyyy-MM-dd
+            qp.set('days', String(days));
+            const url = `${BASE}${PATH_RANGE}?${qp.toString()}`;
+
+            try {
+                statusEl.textContent = 'Loading range...';
+                const data = await fetchJson(url);
+                render(Array.isArray(data) ? data : [data]);
+                statusEl.textContent = `Showing ${Array.isArray(data) ? data.length : 1} day(s)`;
+            } catch (e) { errEl.textContent = e.message || String(e); }
+        }
+
+        async function loadDefault() {
+            clearUI();
+            const url = `${BASE}${PATH_DEFAULT}`;
+            try {
+                statusEl.textContent = 'Loading next 5 days...';
+                const data = await fetchJson(url);
+                render(Array.isArray(data) ? data : [data]);
+                statusEl.textContent = `Showing ${Array.isArray(data) ? data.length : 1} day(s)`;
+            } catch (e) { errEl.textContent = e.message || String(e); }
+        }
+
+        el('loadRange').addEventListener('click', loadRange);
+        el('loadDefault').addEventListener('click', loadDefault);
+        el('clear').addEventListener('click', () => { dateEl.value = ''; daysEl.value = '5'; clearUI(); });
+
+        // Auto-load default list on page open (optional)
+        // loadDefault();
+    </script>
+</body>
+</html>

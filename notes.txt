@@ -1,0 +1,30 @@
+
+SWAGGER 
+*********
+http://localhost:5192/swagger/index.html
+http://localhost:5192/
+
+http://localhost:7071/api/forecast
+
+
+Power shell to test functions
+*************
+
+Set-Location "C:\Users\Public\Sources\WeatherCo_Solution_SOLID_Refactor_FINAL\WeatherCo_Solution_SOLID_Refactor\WeatherCo.MiddleTier"
+# List (should return 5 items)
+irm "http://localhost:7071/api/forecast" | ConvertTo-Json -Depth 5
+
+# Range (ISO safest)
+irm "http://localhost:7071/api/forecast/range?startDate=2025-09-21&days=5" | ConvertTo-Json -Depth 5
+
+# Single date (today should now work, no 500)
+irm "http://localhost:7071/api/forecast/date/2025-09-21" | ConvertTo-Json -Depth 5
+
+
+Power shell to test 
+**************
+dotnet add .\WeatherCo.Tests\WeatherCo.Tests.csproj package coverlet.collector
+
+dotnet test --no-build --collect:"XPlat Code Coverage" --results-directory .\TestResults
+
+dotnet test

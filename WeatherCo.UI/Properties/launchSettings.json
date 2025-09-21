@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "WeatherCo.UI": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MIDDLE_TIER_BASEURL": "http://localhost:7071/api"
+      },
+      "applicationUrl": "https://localhost:53006;http://localhost:53008"
+    }
+  }
+}

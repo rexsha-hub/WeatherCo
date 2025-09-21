@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "WeatherCo.Producer\\WeatherCo.Producer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WeatherCo.UI\\WeatherCo.UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

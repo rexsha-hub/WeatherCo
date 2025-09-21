@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "WeatherCo.Producer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5192"
+      },
+      "applicationUrl": "https://localhost:53005;http://localhost:53007"
+    }
+  }
+}

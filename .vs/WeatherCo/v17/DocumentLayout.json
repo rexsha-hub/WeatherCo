@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|WeatherCo.Producer\\WeatherCo.Producer.csproj|c:\\users\\public\\sources\\weatherco_solution_solid_refactor_final\\weatherco_solution_solid_refactor\\weatherco.producer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|WeatherCo.Producer\\WeatherCo.Producer.csproj|solutionrelative:weatherco.producer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|WeatherCo.Tests\\WeatherCo.Tests.csproj|c:\\users\\public\\sources\\weatherco_solution_solid_refactor_final\\weatherco_solution_solid_refactor\\weatherco.tests\\weatherfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|WeatherCo.Tests\\WeatherCo.Tests.csproj|solutionrelative:weatherco.tests\\weatherfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|WeatherCo.UI\\WeatherCo.UI.csproj|c:\\users\\public\\sources\\weatherco_solution_solid_refactor_final\\weatherco_solution_solid_refactor\\weatherco.ui\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|WeatherCo.UI\\WeatherCo.UI.csproj|solutionrelative:weatherco.ui\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|c:\\users\\public\\sources\\weatherco_solution_solid_refactor_final\\weatherco_solution_solid_refactor\\weatherco.middletier\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|solutionrelative:weatherco.middletier\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|c:\\users\\public\\sources\\weatherco_solution_solid_refactor_final\\weatherco_solution_solid_refactor\\weatherco.middletier\\forecastproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|solutionrelative:weatherco.middletier\\forecastproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|c:\\users\\public\\sources\\weatherco_solution_solid_refactor_final\\weatherco_solution_solid_refactor\\weatherco.middletier\\presentation\\forecastfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|solutionrelative:weatherco.middletier\\presentation\\forecastfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|c:\\users\\public\\sources\\weatherco_solution_solid_refactor_final\\weatherco_solution_solid_refactor\\weatherco.middletier\\application\\forecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|WeatherCo.MiddleTier\\WeatherCo.MiddleTier.csproj|solutionrelative:weatherco.middletier\\application\\forecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "notes.txt",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\notes.txt",
+              "RelativeDocumentMoniker": "notes.txt",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\notes.txt",
+              "RelativeToolTip": "notes.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-21T21:16:25.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\Program.cs",
+              "RelativeDocumentMoniker": "WeatherCo.MiddleTier\\Program.cs",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\Program.cs",
+              "RelativeToolTip": "WeatherCo.MiddleTier\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:59:12.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForecastProxy.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\ForecastProxy.cs",
+              "RelativeDocumentMoniker": "WeatherCo.MiddleTier\\ForecastProxy.cs",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\ForecastProxy.cs",
+              "RelativeToolTip": "WeatherCo.MiddleTier\\ForecastProxy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:58:24.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForecastService.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\Application\\ForecastService.cs",
+              "RelativeDocumentMoniker": "WeatherCo.MiddleTier\\Application\\ForecastService.cs",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\Application\\ForecastService.cs",
+              "RelativeToolTip": "WeatherCo.MiddleTier\\Application\\ForecastService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:18:25.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ForecastFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\Presentation\\ForecastFunctions.cs",
+              "RelativeDocumentMoniker": "WeatherCo.MiddleTier\\Presentation\\ForecastFunctions.cs",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.MiddleTier\\Presentation\\ForecastFunctions.cs",
+              "RelativeToolTip": "WeatherCo.MiddleTier\\Presentation\\ForecastFunctions.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T19:27:16.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.UI\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "WeatherCo.UI\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.UI\\wwwroot\\index.html",
+              "RelativeToolTip": "WeatherCo.UI\\wwwroot\\index.html",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAI4AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-21T20:15:09.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherFactoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.Tests\\WeatherFactoryTests.cs",
+              "RelativeDocumentMoniker": "WeatherCo.Tests\\WeatherFactoryTests.cs",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.Tests\\WeatherFactoryTests.cs",
+              "RelativeToolTip": "WeatherCo.Tests\\WeatherFactoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:14:20.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.Producer\\Program.cs",
+              "RelativeDocumentMoniker": "WeatherCo.Producer\\Program.cs",
+              "ToolTip": "C:\\Users\\Public\\Sources\\WeatherCo_Solution_SOLID_Refactor_FINAL\\WeatherCo_Solution_SOLID_Refactor\\WeatherCo.Producer\\Program.cs",
+              "RelativeToolTip": "WeatherCo.Producer\\Program.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAD4vzoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T19:37:03.784Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
